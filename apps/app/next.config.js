@@ -3,8 +3,7 @@
  */
 module.exports = {
   images: {
-    remotePatterns: [
-    ],
+    remotePatterns: [],
   },
   reactStrictMode: false,
   transpilePackages: [

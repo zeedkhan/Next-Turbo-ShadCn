@@ -24,15 +24,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20.x
-      
+
       - name: Install dependencies
         run: npm install
-      
+
       - name: Check format
         run: npm run format:check
 
@@ -40,14 +40,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20.x
-      
+
       - name: Install dependencies
         run: npm install
-      
+
       - name: Check types
         run: npm run typecheck
